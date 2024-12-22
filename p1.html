@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=outline">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+             .lp{
+                background-color: rgb(91, 59, 59);
+                background-image: linear-gradient(to right ,rgb(91, 59, 59));
+                height: 850px;
+                width: 100%;
+                position: relative;
+             }
+             .title>h1{
+                position: absolute;
+                height: 200px;
+                width: 900px;
+                left: 600px;
+                top: 100px;
+                
+            }
+            h1{
+                font-size: xx-large;
+                font-weight: bolder;
+                font-family: cursive;
+            }
+             .header{
+                height: 400px;
+                width: 80%;
+                position: absolute;
+                display: flex;
+                gap: 10px;
+                left: 30px;
+                top: 200px;
+             }
+            .recipebox{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 30px;
+                text-align: center;
+               
+            }
+            .hello{
+                text-align: center;
+                height: 200px;
+                width: 100%;
+            }
+            .recipebox  img{
+                height: 400px;
+                width: 350px;
+                border-radius: 10%;
+
+            }
+        .searchbox{
+            position: absolute;
+            top: 790px;
+            right: 160px;
+            width: 200px;
+            height: 40px;
+            padding: 4px;
+            background-color: white;
+            border: 3px solid rgb(91, 59, 59); 
+            text-align:center ;
+            color: rgb(91, 59, 59); 
+            font-weight: bolder;
+         
+        }
+        .searchbtn{
+            position: absolute;
+            top: 790px;
+            right: 40px;
+            width: 100px;
+            height: 50px;
+            padding: 10px; 
+            background-color: white;
+          
+           
+        }
+      
+        .sbox{
+            display: inline-flex;
+            position: absolute;
+            top: 790px;
+            left: 40px;
+            gap: 10px;
+        }
+        .s3{
+            height: 30px;
+            width:80px ;
+            padding: 5px;
+            background-color: white;
+            border: 4px solid   rgb(91, 59, 59); 
+            text-align: center;
+        }
+        .s3 a{
+            color: rgb(91, 59, 59);
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        h1{
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+        .recipe button{
+            padding: 8px;
+            font-size: larger;
+            font-weight: 700;
+            background-color: red;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 10%;
+
+        }
+        .rbtn{
+            height: 50px;
+            width: 200px;
+            border: none;
+            background-color:white ;
+            color: rgb(91, 59, 59);
+            font-weight: bolder;
+            text-transform: none;
+        }
+        .hero a{
+            padding: 10px;
+        }
+        .hero{
+            display: flex;
+            height: 500px;
+            width: 100%;
+            background-color: rgb(91, 59, 59);
+            justify-content: center;
+            gap: 50px;
+           margin-top: 40px;
+           align-items: center;
+           color: white;
+        }
+        .ih{
+            padding-right: 20px;
+            border-right: 3px solid white;
+        }
+        .recipe-details{
+            display: none;
+            position: fixed;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color:  rgb(91, 59, 59);
+            color: white;
+            height: 300px;
+            width: 500px;
+            padding: 20px;
+            overflow-y: scroll;
+            border-radius: 10px;
+            word-spacing: 2px;
+          
+
+        }
+        .recipe-close-btn{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 30px;
+            width: 40px;
+            background-color: red;
+            border: 3px white;
+            padding: 5px;
+        }
+        .footer{
+            height: 350px;
+            width: 100%;
+            background-color: white;
+        }
+        .bye{
+            height: 100px;
+            width: 100%;
+            background-color:rgb(91, 59, 59) ;
+            color: white;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: xx-large;
+            text-align: center;
+            padding-top: 30px;
+
+        }
+       
+           
+
+
+        </style>
+    </head>
+    <body>
+       
+         <div class="lp">
+         <div class="title">
+            <h1  class="font-effect-outline b2">WELCOME TO OUR RECIPE WEBSITE</h1>
+         </div>
+
+         <div class="header">
+           <video autoplay muted loop src="C:\Users\Raksha\Downloads\Untitled design (1).mp4" height="600px" width="60%"></video>
+           <video autoplay muted loop src="C:\Users\Raksha\Downloads\Untitled design.mp4" height="600px" width="60%"></video>
+         </div>
+        </div>
+        
+        <nav>
+            <div class="sbox">
+            <div class="s3"><a href="">HOME</a></div>
+            <div class="s3"><a href="">About Us</a></div>
+            <div class="s3 "><a class="login" onclick="f1()" href="">Login</a></div>
+           </div>
+            
+            <forms>
+                <input  type="text" placeholder="search recepies here" class="searchbox">
+                <button type="submit" class="searchbtn">SEARCH</button>
+            </forms>
+        </nav>
+        <main>
+            <section>
+                <div class="recipebox">
+                   <div class="hello"> <h1>search your favourate recipes<br></h1><br></div>
+                </div>
+                <div class="recipe-details">
+                    <button type="button" class="recipe-close-btn">X
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="recipe-details-content">
+
+                    </div>
+                </div>
+            </section>
+        </main><br>
+        <div class="hero">
+            <div>
+                <img class="ih" src="C:\Users\Raksha\Downloads\food cp3 2.jpg" height="400px" width="400px">
+            </div>
+            <div>
+                <h1>THE FOOD RECIPES</h1>
+                <h3>learn the Recipes through us</h3>
+                <h3>and enjoy your dish</h3>
+                <button class="rbtn"><a style="text-decoration: none;" href="p2.html" target="_blank">CHECK THE RECIPES</a></button>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+        <div class="bye">
+            <h1>&copy;copyright MT FOOD RECIPES </h1>
+        </div>
+        
+      
+   
+
+<script src="p2.js"></script>
+
+    </body>
+</html>
